@@ -553,6 +553,60 @@
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(74, 63, 85, 0.85); /* pastel purple overlay */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #faf5f0;
+  padding: 30px;
+  border: 3px ridge #e8c4d5;
+  text-align: center;
+  color: #4a3f55;
+  font-family: 'Times New Roman', serif;
+  max-width: 400px;
+  margin: 0 20px;
+  box-shadow: 0 0 30px rgba(168, 127, 160, 0.6);
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #f3d8e5, #e8c4d5);
+  color: #4a3f55;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px outset #e8c4d5;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.modal-button:hover {
+  background: linear-gradient(to bottom, #e8c4d5, #d4a8c0);
+}
+
+
+    
   </style>
   
   
@@ -910,17 +964,24 @@ But I am poor and needy; yet the Lord thinketh upon me: thou art my help and my 
     }
 
     // Initialize
-    window.addEventListener('load', function() {
-      createStars();
-      setInterval(updateCounters, 30000);
-      setInterval(addMysticalEffects, 5000);
+   window.addEventListener('load', function() {
+  createStars();
+  setInterval(updateCounters, 30000);
+  setInterval(addMysticalEffects, 5000);
 
-      if (!localStorage.getItem('visited_before')) {
-        setTimeout(() => {
-          alert('Welcome, seeker. You have entered the sacred digital realm of Aetheros Umbralath. Prepare your consciousness for divine knowledge transmission.');
-          localStorage.setItem('visited_before', 'true');
-        }, 2000);
-      }
+  // 🚨 This is the new popup logic
+  if (!localStorage.getItem('visited_before')) {
+    const modal = document.getElementById('welcome-modal');
+    modal.style.display = 'flex';
+    localStorage.setItem('visited_before', 'true');
+  }
+});
+
+  </div>
+    </div>
+
+  
+    
     });
 
     document.addEventListener('contextmenu', function(e) {
