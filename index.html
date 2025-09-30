@@ -23,38 +23,38 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
       pointer-events: none;
       z-index: 1;
     }
 
     .star {
       position: absolute;
-      width: 1px;
-      height: 1px;
+      width: 1 px;
+      height: 1 px;
       background: #d8bfd8; /* pastel lilac */
       animation: twinkle 3s infinite;
     }
 
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 1; }
+    .keyframes twinkle {
+      0 %, 100 % { opacity: 0.3; }
+      50 % { opacity: 1; }
     }
 
     .main-container {
       position: relative;
       z-index: 2;
-      min-height: 100vh;
-      max-width: 1024px;
+      min-height: 100 vh;
+      max-width: 1024 px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.95);
-      border: 3px ridge #e8c4d5; /* pastel pink border */
-      box-shadow: 0 0 20px rgba(232, 196, 213, 0.3);
+      background: rgba (255, 255, 255, 0.95);
+      border: 3 px ridge #e8c4d5; /* pastel pink border */
+      box-shadow: 0 0 20 px rgba (232, 196, 213, 0.3);
     }
 
     .header-frame {
-      background: linear-gradient(to bottom, #f1e8e0, #f7f3eb);
+      background: linear-gradient (bottom, #f1e8e0, #f7f3eb);
       border-bottom: 3px ridge #e8c4d5;
       padding: 0;
     }
@@ -62,108 +62,108 @@
     .title-bar {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 8px;
+      padding: 8 px;
       text-align: center;
       font-weight: bold;
-      font-size: 14px;
-      border-bottom: 2px solid #d4a8c0;
+      font-size: 14 px;
+      border-bottom: 2 px solid #d4a8c0;
     }
 
     .header-content {
-      padding: 20px;
+      padding: 20 px;
       text-align: center;
     }
 
     .main-title {
-      font-size: 36px;
+      font-size: 36 px;
       color: #a87fa0; /* muted lilac */
-      text-shadow: 2px 2px 0 #d4a8c0;
-      margin-bottom: 10px;
+      text-shadow: 2 px 2 px 0 #d4a8c0;
+      margin-bottom: 10 px;
       font-weight: bold;
     }
 
     .subtitle {
-      font-size: 18px;
+      font-size: 18 px;
       color: #7f6f83;
       font-style: italic;
-      margin-bottom: 20px;
+      margin-bottom: 20 px;
     }
 
     .counter-section {
       background: #f1e8e0;
-      border: 2px inset #e8c4d5;
-      padding: 10px;
-      margin: 10px 20px;
+      border: 2 px inset #e8c4d5;
+      padding: 10 px;
+      margin: 10 px 20 px;
       text-align: center;
       font-family: 'Courier New', monospace;
     }
 
     .navigation-frame {
       background: #f1e8e0;
-      border: 2px inset #e8c4d5;
-      margin: 0 20px 20px 20px;
+      border: 2 px inset #e8c4d5;
+      margin: 0 20 px 20 px 20 px;
     }
 
     .nav-title {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 5px;
+      padding: 5 px;
       text-align: center;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 14 px;
     }
 
     .nav-buttons {
-      padding: 15px;
+      padding: 15 px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 10 px;
     }
 
     .nav-btn {
-      background: linear-gradient(to bottom, #f3d8e5, #e8c4d5);
-      border: 2px outset #e8c4d5;
+      background: linear-gradient (to bottom, #f3d8e5, #e8c4d5);
+      border: 2 px outset #e8c4d5;
       color: #4a3f55;
-      padding: 8px 16px;
+      padding: 8 px 16 px;
       text-decoration: none;
       font-weight: bold;
       font-family: 'Times New Roman', serif;
       cursor: pointer;
-      transition: all 0.2s;
-      min-width: 120px;
+      transition: all 0.2 s;
+      min-width: 120 px;
       text-align: center;
     }
 
     .nav-btn:hover {
-      background: linear-gradient(to bottom, #e8c4d5, #d4a8c0);
-      border: 2px inset #e8c4d5;
+      background: linear-gradient ( bottom, #e8c4d5, #d4a8c0);
+      border: 2 px inset #e8c4d5;
     }
 
     .nav-btn.active {
       background: linear-gradient(to bottom, #d4a8c0, #c38ea8);
-      border: 2px inset #d4a8c0;
+      border: 2 px inset #d4a8c0;
       color: #e8c4d5;
     }
 
     .content-frame {
-      margin: 0 20px 20px 20px;
-      border: 2px inset #e8c4d5;
+      margin: 0 20 px 20 px 20 px;
+      border: 2 px inset #e8c4d5;
       background: #faf5f0;
-      min-height: 600px;
+      min-height: 600 px;
     }
 
     .content-title {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 8px;
+      padding: 8 px;
       text-align: center;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 16 px;
     }
 
     .content-area {
-      padding: 20px;
+      padding: 20 px;
       display: none;
     }
 
@@ -173,24 +173,24 @@
 
     .sidebar-frame {
       float: right;
-      width: 200px;
-      margin: 0 0 20px 20px;
-      border: 2px inset #e8c4d5;
+      width: 200 px;
+      margin: 0 0 20 px 20 px;
+      border: 2 px inset #e8c4d5;
       background: #f1e8e0;
     }
 
     .sidebar-title {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 5px;
+      padding: 5 px;
       text-align: center;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 12 px;
     }
 
     .sidebar-content {
-      padding: 15px;
-      font-size: 12px;
+      padding: 15 px;
+      font-size: 12 px;
     }
 
     .sidebar-content ul {
@@ -198,29 +198,29 @@
     }
 
     .sidebar-content li {
-      margin: 8px 0;
-      padding: 3px;
-      border-left: 2px solid #e8c4d5;
-      padding-left: 8px;
+      margin: 8 px 0;
+      padding: 3 px;
+      border-left: 2 px solid #e8c4d5;
+      padding-left: 8 px;
     }
 
     .left-sidebar {
       float: left;
-      margin: 0 20px 20px 0;
+      margin: 0 20 px 20 px 0;
     }
 
     .stats-table {
-      width: 100%;
-      border: 1px solid #e8c4d5;
+      width: 100 %;
+      border: 1 px solid #e8c4d5;
       border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 14px;
+      margin: 20 px 0;
+      font-size: 14 px;
     }
 
     .stats-table th,
     .stats-table td {
-      border: 1px solid #e8c4d5;
-      padding: 8px;
+      border: 1 px solid #e8c4d5;
+      padding: 8 px;
       text-align: left;
     }
 
@@ -231,14 +231,14 @@
     }
 
     .stats-table tr:nth-child(even) {
-      background: rgba(232, 196, 213, 0.1);
+      background: rgba (232, 196, 213, 0.1);
     }
 
     .ancient-text-box {
-      border: 3px double #e8c4d5;
-      background: rgba(232, 212, 222, 0.6);
-      padding: 20px;
-      margin: 20px 0;
+      border: 3 px double #e8c4d5;
+      background: rgba (232, 212, 222, 0.6);
+      padding: 20 px;
+      margin: 20 px 0;
       font-style: italic;
       text-align: center;
       position: relative;
@@ -248,30 +248,30 @@
     .ancient-text-box::before {
       content: '◊';
       position: absolute;
-      top: -10px;
-      left: 20px;
+      top: -10 px;
+      left: 20 px;
       background: #faf5f0;
       color: #e8c4d5;
-      padding: 0 10px;
-      font-size: 20px;
+      padding: 0 10 px;
+      font-size: 20 px;
     }
 
     .ancient-text-box::after {
       content: '◊';
       position: absolute;
-      bottom: -10px;
-      right: 20px;
+      bottom: -10 px;
+      right: 20 px;
       background: #faf5f0;
       color: #e8c4d5;
-      padding: 0 10px;
-      font-size: 20px;
+      padding: 0 10 px;
+      font-size: 20 px;
     }
 
     .ability-grid {
       display: table;
-      width: 100%;
-      border-spacing: 10px;
-      margin: 20px 0;
+      width: 100 %;
+      border-spacing: 10 px;
+      margin: 20 px 0;
     }
 
     .ability-row {
@@ -280,10 +280,10 @@
 
     .ability-cell {
       display: table-cell;
-      width: 50%;
-      border: 2px inset #e8c4d5;
+      width: 50 %;
+      border: 2 px inset #e8c4d5;
       background: #f1e8e0;
-      padding: 15px;
+      padding: 15 px;
       vertical-align: top;
       color: #4a3f55;
     }
@@ -291,55 +291,55 @@
     .ability-header {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 5px;
+      padding: 5 px;
       text-align: center;
       font-weight: bold;
-      margin: -15px -15px 10px -15px;
+      margin: -15 px -15 px 10 px -15 px;
     }
 
     .timeline-table {
-      width: 100%;
-      border: 2px solid #e8c4d5;
+      width: 100 %;
+      border: 2 px solid #e8c4d5;
       border-collapse: collapse;
-      margin: 20px 0;
+      margin: 20 px 0;
       color: #4a3f55;
     }
 
     .timeline-table th {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 10px;
-      border: 1px solid #d4a8c0;
+      padding: 10 px;
+      border: 1 px solid #d4a8c0;
     }
 
     .timeline-table td {
-      padding: 15px;
-      border: 1px solid #e8c4d5;
+      padding: 15 px;
+      border: 1 px solid #e8c4d5;
       vertical-align: top;
     }
 
     .timeline-table tr:nth-child(odd) {
-      background: rgba(232, 196, 213, 0.05);
+      background: rgba (232, 196, 213, 0.05);
     }
 
     .artifact-showcase {
-      border: 2px ridge #e8c4d5;
+      border: 2 px ridge #e8c4d5;
       background: #faf5f0;
-      margin: 20px 0;
+      margin: 20 px 0;
       padding: 0;
     }
 
     .showcase-header {
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 8px;
+      padding: 8 px;
       text-align: center;
       font-weight: bold;
     }
 
     .artifact-grid {
       display: table;
-      width: 100%;
+      width: 100 %;
       border-spacing: 0;
     }
 
@@ -349,25 +349,25 @@
 
     .artifact-item {
       display: table-cell;
-      width: 33.33%;
-      border: 1px solid #e8c4d5;
-      padding: 20px;
+      width: 33.33 %;
+      border: 1 px solid #e8c4d5;
+      padding: 20 px;
       text-align: center;
-      background: rgba(232, 212, 222, 0.3);
+      background: rgba (232, 212, 222, 0.3);
       cursor: pointer;
       transition: background 0.3s;
       color: #4a3f55;
     }
 
     .artifact-item:hover {
-      background: rgba(232, 196, 213, 0.5);
+      background: rgba (232, 196, 213, 0.5);
     }
 
     .prophecy-scroll {
       background: #faf5f0;
-      border: 3px ridge #e8c4d5;
-      padding: 20px;
-      margin: 20px 0;
+      border: 3 px ridge #e8c4d5;
+      padding: 20 px;
+      margin: 20 px 0;
       position: relative;
       font-family: 'Times New Roman', serif;
       color: #5a4c67;
@@ -376,27 +376,27 @@
     .prophecy-scroll::before {
       content: 'DIVINE PROPHECY';
       position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: -10 px;
+      left: 50 %;
+      transform: translateX (-50 %);
       background: #e8c4d5;
       color: #4a3f55;
-      padding: 3px 10px;
-      font-size: 12px;
+      padding: 3 px 10 px;
+      font-size: 12 px;
       font-weight: bold;
     }
 
     .ritual-box {
-      border: 2px solid #e8c4d5;
-      background: rgba(249, 245, 240, 0.8);
-      margin: 15px 0;
+      border: 2 px solid #e8c4d5;
+      background: rgba (249, 245, 240, 0.8);
+      margin: 15 px 0;
       padding: 0;
     }
 
     .ritual-header {
-      background: linear-gradient(to right, #e8c4d5, #d4a8c0);
+      background: linear-gradient (right, #e8c4d5, #d4a8c0);
       color: #4a3f55;
-      padding: 8px;
+      padding: 8 px;
       font-weight: bold;
       cursor: pointer;
       position: relative;
@@ -405,15 +405,15 @@
     .ritual-header::after {
       content: '[+]';
       position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
+      right: 10 px;
+      top: 50 %;
+      transform: translateY (-50 %);
     }
 
     .ritual-content {
-      padding: 15px;
+      padding: 15 px;
       display: none;
-      border-top: 1px solid #e8c4d5;
+      border-top: 1 px solid #e8c4d5;
     }
 
     .ritual-box.expanded .ritual-content {
@@ -430,24 +430,24 @@
     }
 
     @keyframes blink {
-      0%, 50% { opacity: 1; }
-      51%, 100% { opacity: 0.3; }
+      0 %, 50 % { opacity: 1; }
+      51 %, 100 % { opacity: 0.3; }
     }
 
    .footer-links {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 20 px;
+  margin-bottom: 20 px;
   flex-wrap: wrap;
 }
 
 .footer-section {
   flex: 1;
-  min-width: 200px;
-  border: 1px solid #e8c4d5;
-  background: rgba(249, 245, 240, 0.5);
-  padding: 15px;
+  min-width: 200 px;
+  border: 1 px solid #e8c4d5;
+  background: rgba (249, 245, 240, 0.5);
+  padding: 15 px;
   color: #4a3f55;
   display: flex;
   flex-direction: column;
@@ -457,48 +457,53 @@
 
     .visitor-counter {
       font-family: 'Courier New', monospace;
-      font-size: 12px;
-      margin: 10px 0;
+      font-size: 12 px;
+      margin: 10 px 0;
       color: #5a4c67;
     }
 
     .web-ring {
-      border: 1px solid #e8c4d5;
-      background: rgba(249, 245, 240, 0.3);
-      padding: 10px;
-      margin: 10px 0;
+      border: 1 px solid #e8c4d5;
+      background: rgba (249, 245, 240, 0.3);
+      padding: 10 px;
+      margin: 10 px 0;
       text-align: center;
-      font-size: 11px;
+      font-size: 11 px;
       color: #5a4c67;
     }
+.media (max-width: 768 px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    @media (max-width: 768px) {
-      .main-container {
-        margin: 0;
-        border: none;
-        max-width: 100%;
-      }
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 
       .sidebar-frame {
         float: none;
-        width: 100%;
-        margin: 0 0 20px 0;
+        width: 100 %;
+        margin: 0 0 20 px 0;
       }
 
       .ability-cell {
         display: block;
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100 %;
+        margin-bottom: 10 px;
       }
 
       .artifact-item {
         display: block;
-        width: 100%;
+        width: 100 %;
       }
 
       .footer-section {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 20 px;
       }
 
       .nav-buttons {
