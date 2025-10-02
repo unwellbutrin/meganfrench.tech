@@ -3,73 +3,554 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Megan French | STEM Student & Aspiring Computational Biologist</title>
+  <title> Megan French | STEM Student & Aspiring Computational Biologist </title>
   <style>
-    /* --- your styles preserved --- */
-    * {margin: 0; padding: 0; box-sizing: border-box;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Times New Roman', serif;
-      background: #ffffff;
-      color: #202020;
+      background: #ffffff; /* pure white */
+      color: #202020; /* dark grey / near-black text */
       line-height: 1.4;
       overflow-x: auto;
     }
-    .cosmic-stars {position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;}
-    .star {position:absolute; width:1px; height:1px; background:#cccccc; animation:twinkle 3s infinite;}
-    @keyframes twinkle {0%,100%{opacity:0.3;} 50%{opacity:0.8;}}
-    .main-container {position:relative; z-index:2; min-height:100vh; max-width:1024px; margin:0 auto; background:#fff; border:2px solid #bbb;}
-    .header-frame {background:#f9f9f9; border-bottom:2px solid #ccc;}
-    .title-bar {background:#ddd; color:#202020; padding:8px; text-align:center; font-weight:bold; font-size:14px; border-bottom:1px solid #b0b0b0;}
-    .header-content {padding:20px; text-align:center;}
-    .main-title {font-size:36px; margin-bottom:10px; font-weight:bold;}
-    .subtitle {font-size:18px; color:#555; font-style:italic; margin-bottom:20px;}
-    .counter-section {background:#f3f3f3; border:1px inset #ccc; padding:10px; margin:10px 20px; text-align:center; font-family:'Courier New', monospace;}
-    .navigation-frame {background:#f3f3f3; border:1px inset #ccc; margin:0 20px 20px;}
-    .nav-title {background:#ddd; padding:5px; text-align:center; font-weight:bold;}
-    .nav-buttons {padding:15px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px;}
-    .nav-btn {background:#eee; border:1px solid #ccc; padding:8px 16px; text-decoration:none; font-weight:bold; cursor:pointer; min-width:120px;}
-    .nav-btn:hover {background:#f4e8e8; border-color:#e8c4c4;}
-    .nav-btn.active {background:#f4d8d8; border:1px solid #e8a8a8;}
-    .content-frame {margin:0 20px 20px; border:1px inset #ccc; background:#fafafa; min-height:600px;}
-    .content-title {background:#ddd; padding:8px; text-align:center; font-weight:bold; font-size:16px;}
-    .content-area {padding:20px; display:none;}
-    .content-area.active {display:block;}
-    .sidebar-frame {float:right; width:200px; margin:0 0 20px 20px; border:1px inset #ccc; background:#f3f3f3;}
-    .sidebar-title {background:#ddd; padding:5px; text-align:center; font-weight:bold; font-size:12px;}
-    .sidebar-content {padding:15px; font-size:12px;}
-    .sidebar-content ul {list-style:none;}
-    .sidebar-content li {margin:8px 0; padding-left:8px; border-left:1px solid #ccc;}
-    .left-sidebar {float:left; margin:0 20px 20px 0;}
-    .stats-table {width:100%; border:1px solid #ccc; border-collapse:collapse; margin:20px 0; font-size:14px;}
-    .stats-table th,.stats-table td {border:1px solid #ccc; padding:8px; text-align:left;}
-    .stats-table th {background:#ddd; font-weight:bold;}
-    .ancient-text-box {border:2px dashed #ccc; background:#f5f5f5; padding:20px; margin:20px 0; font-style:italic; text-align:center; position:relative; color:#555;}
-    .ancient-text-box::before,.ancient-text-box::after {content:'◊'; position:absolute; background:#fff; color:#ccc; padding:0 10px; font-size:20px;}
-    .ancient-text-box::before {top:-10px; left:20px;}
-    .ancient-text-box::after {bottom:-10px; right:20px;}
-    .ritual-box {border:1px solid #ccc; background:#f9f9f9; margin:15px 0;}
-    .ritual-header {background:#ddd; padding:8px; font-weight:bold; cursor:pointer; position:relative;}
-    .ritual-header::after {content:'[+]'; position:absolute; right:10px; top:50%; transform:translateY(-50%);}
-    .ritual-box.expanded .ritual-content {display:block;}
-    .ritual-box.expanded .ritual-header::after {content:'[-]';}
-    .ritual-content {padding:15px; display:none; border-top:1px solid #ccc;}
-    .footer-frame {background:#f9f9f9; border-top:2px solid #ccc; padding:20px; text-align:center;}
-    .footer-links {display:table; width:100%; border-spacing:20px; margin-bottom:20px;}
-    .footer-section {display:table-cell; vertical-align:top; border:1px solid #ccc; background:#fafafa; padding:15px;}
-    .footer-section h4 {background:#ddd; padding:5px; margin:-15px -15px 10px; text-align:center; font-size:14px;}
-    .footer-section ul {list-style:none;}
-    .footer-section a {color:#e8a8a8; text-decoration:underline; font-size:12px;}
-    .footer-section a:hover {color:#d48888;}
-    .blink-text {animation:blink 1.5s infinite; color:#d4a8a8;}
-    @keyframes blink {0%,50%{opacity:1;}51%,100%{opacity:0.3;}}
-    .scroll-marquee {background:#ddd; color:#202020; padding:5px; white-space:nowrap; overflow:hidden; border:1px solid #b0b0b0; margin:10px 0;}
-    .scroll-marquee span {display:inline-block; animation:scroll-left 30s linear infinite;}
-    @keyframes scroll-left {0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
-    @media(max-width:768px){
-      .main-container{margin:0; border:none; max-width:100%;}
-      .sidebar-frame{float:none;width:100%;margin:0 0 20px;}
-      .footer-section{display:block;margin-bottom:20px;}
-      .nav-buttons{flex-direction:column;align-items:center;}
+
+    .cosmic-stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .star {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background: #cccccc; /* light grey stars */
+      animation: twinkle 3s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.8; }
+    }
+
+    .main-container {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      max-width: 1024px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 2px solid #bbbbbb; /* subtle grey border */
+    }
+
+    .header-frame {
+      background: #f9f9f9;
+      border-bottom: 2px solid #cccccc;
+      padding: 0;
+    }
+
+    .title-bar {
+      background: #dddddd;
+      color: #202020;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      border-bottom: 1px solid #b0b0b0;
+    }
+
+    .header-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 36px;
+      color: #202020;
+      text-shadow: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555555;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .counter-section {
+      background: #f3f3f3;
+      border: 1px inset #cccccc;
+      padding: 10px;
+      margin: 10px 20px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+    }
+
+    .navigation-frame {
+      background: #f3f3f3;
+      border: 1px inset #cccccc;
+      margin: 0 20px 20px 20px;
+    }
+
+    .nav-title {
+      background: #dddddd;
+      color: #202020;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .nav-buttons {
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .nav-btn {
+      background: #eeeeee;
+      border: 1px solid #cccccc;
+      color: #202020;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+      transition: all 0.2s;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .nav-btn:hover {
+      background: #f4e8e8; /* very light pink tint on hover */
+      border-color: #e8c4c4; /* soft pink border */
+    }
+
+    .nav-btn.active {
+      background: #f4d8d8; /* light pink background to indicate active */
+      border: 1px solid #e8a8a8;
+      color: #202020;
+    }
+
+    .content-frame {
+      margin: 0 20px 20px 20px;
+      border: 1px inset #cccccc;
+      background: #fafafa;
+      min-height: 600px;
+    }
+
+    .content-title {
+      background: #dddddd;
+      color: #202020;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .content-area {
+      padding: 20px;
+      display: none;
+    }
+
+    .content-area.active {
+      display: block;
+    }
+
+    .sidebar-frame {
+      float: right;
+      width: 200px;
+      margin: 0 0 20px 20px;
+      border: 1px inset #cccccc;
+      background: #f3f3f3;
+    }
+
+    .sidebar-title {
+      background: #dddddd;
+      color: #202020;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .sidebar-content {
+      padding: 15px;
+      font-size: 12px;
+    }
+
+    .sidebar-content ul {
+      list-style: none;
+    }
+
+    .sidebar-content li {
+      margin: 8px 0;
+      padding: 3px;
+      border-left: 1px solid #cccccc;
+      padding-left: 8px;
+    }
+
+    .left-sidebar {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    .stats-table {
+      width: 100%;
+      border: 1px solid #cccccc;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .stats-table th,
+    .stats-table td {
+      border: 1px solid #cccccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .stats-table th {
+      background: #dddddd;
+      color: #202020;
+      font-weight: bold;
+    }
+
+    .stats-table tr:nth-child(even) {
+      background: #f7f7f7;
+    }
+
+    .ancient-text-box {
+      border: 2px dashed #cccccc;
+      background: #f5f5f5;
+      padding: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+      color: #555555;
+    }
+
+    .ancient-text-box::before {
+      content: '◊';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: #ffffff;
+      color: #cccccc;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+
+    .ancient-text-box::after {
+      content: '◊';
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      background: #ffffff;
+      color: #cccccc;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+
+    .ability-grid {
+      display: table;
+      width: 100%;
+      border-spacing: 10px;
+      margin: 20px 0;
+    }
+
+    .ability-row {
+      display: table-row;
+    }
+
+    .ability-cell {
+      display: table-cell;
+      width: 50%;
+      border: 1px inset #cccccc;
+      background: #f3f3f3;
+      padding: 15px;
+      vertical-align: top;
+      color: #202020;
+    }
+
+    .ability-header {
+      background: #dddddd;
+      color: #202020;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      margin: -15px -15px 10px -15px;
+    }
+
+    .timeline-table {
+      width: 100%;
+      border: 1px solid #cccccc;
+      border-collapse: collapse;
+      margin: 20px 0;
+      color: #202020;
+    }
+
+    .timeline-table th {
+      background: #dddddd;
+      color: #202020;
+      padding: 10px;
+      border: 1px solid #b0b0b0;
+    }
+
+    .timeline-table td {
+      padding: 15px;
+      border: 1px solid #cccccc;
+      vertical-align: top;
+    }
+
+    .timeline-table tr:nth-child(odd) {
+      background: #f7f7f7;
+    }
+
+    .artifact-showcase {
+      border: 1px solid #cccccc;
+      background: #fafafa;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .showcase-header {
+      background: #dddddd;
+      color: #202020;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .artifact-grid {
+      display: table;
+      width: 100%;
+      border-spacing: 0;
+    }
+
+    .artifact-row {
+      display: table-row;
+    }
+
+    .artifact-item {
+      display: table-cell;
+      width: 33.33%;
+      border: 1px solid #cccccc;
+      padding: 20px;
+      text-align: center;
+      background: #f5f5f5;
+      cursor: pointer;
+      transition: background 0.3s;
+      color: #202020;
+    }
+
+    .artifact-item:hover {
+      background: #f4e8e8;
+    }
+
+    .prophecy-scroll {
+      background: #fafafa;
+      border: 2px solid #cccccc;
+      padding: 20px;
+      margin: 20px 0;
+      position: relative;
+      font-family: 'Times New Roman', serif;
+      color: #555555;
+    }
+
+    .prophecy-scroll::before {
+      content: 'DIVINE PROPHECY';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #dddddd;
+      color: #202020;
+      padding: 3px 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .ritual-box {
+      border: 1px solid #cccccc;
+      background: #f9f9f9;
+      margin: 15px 0;
+      padding: 0;
+    }
+
+    .ritual-header {
+      background: #dddddd;
+      color: #202020;
+      padding: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .ritual-header::after {
+      content: '[+]';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .ritual-box.expanded .ritual-content {
+      display: block;
+    }
+
+    .ritual-box.expanded .ritual-header::after {
+      content: '[-]';
+    }
+
+    .ritual-content {
+      padding: 15px;
+      display: none;
+      border-top: 1px solid #cccccc;
+    }
+
+    .blink-text {
+      animation: blink 1.5s infinite;
+      color: #d4a8a8; /* muted pink for blink */
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0.3; }
+    }
+
+    .footer-frame {
+      background: #f9f9f9;
+      border-top: 2px solid #cccccc;
+      padding: 20px;
+      text-align: center;
+      color: #202020;
+    }
+
+    .footer-links {
+      display: table;
+      width: 100%;
+      border-spacing: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer-section {
+      display: table-cell;
+      vertical-align: top;
+      border: 1px solid #cccccc;
+      background: #fafafa;
+      padding: 15px;
+      color: #202020;
+    }
+
+    .footer-section h4 {
+      background: #dddddd;
+      color: #202020;
+      padding: 5px;
+      margin: -15px -15px 10px -15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section a {
+      color: #e8a8a8; /* light pink hyperlinks */
+      text-decoration: underline;
+      font-size: 12px;
+    }
+
+    .footer-section a:hover {
+      color: #d48888;
+      background: transparent;
+    }
+
+    .visitor-counter {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      margin: 10px 0;
+      color: #555555;
+    }
+
+    .web-ring {
+      border: 1px solid #cccccc;
+      background: #fafafa;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+      font-size: 11px;
+      color: #555555;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        margin: 0;
+        border: none;
+        max-width: 100%;
+      }
+
+      .sidebar-frame {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+
+      .ability-cell {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .artifact-item {
+        display: block;
+        width: 100%;
+      }
+
+      .footer-section {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .scroll-marquee {
+      background: #dddddd;
+      color: #202020;
+      padding: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 1px solid #b0b0b0;
+      margin: 10px 0;
+    }
+
+    .scroll-marquee span {
+      display: inline-block;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
@@ -77,15 +558,23 @@
   <div class="cosmic-stars" id="stars"></div>
 
   <div class="main-container">
+    <!-- Header Frame -->
     <div class="header-frame">
-      <div class="title-bar">An Aspiring Computational Biologist's Online Scientific Journal</div>
+      <div class="title-bar">
+        An Aspiring Computational Biologist's Online Scientific Journal
+      </div>
+
       <div class="header-content">
         <div class="main-title">MEGAN FRENCH</div>
-        <div class="subtitle">STEM student and aspiring computational biologist…</div>
+        <div class="subtitle">
+          STEM student and aspiring computational biologist, currently pursuing a degree in Computer Science at University of the People. This site serves as a digital journal of my studies and research interests, with weekly readings, notes, and write-ups ranging from foundational computing concepts to emerging fields like wireless body area networks.
+        </div>
+
         <div class="scroll-marquee">
-          <span>☤ Welcome to My Digital Composition Book ☤ Sharing My Educational Progress ☤ Ancient Wisdom Preferred ☤</span>
+          <span>☤ Welcome, to My Digital Composition Book ☤ Sharing My Educational Progress ☤ And the Process ☤ Open Mind Required ☤ Skeptics Still Accepted ☤ Ancient Wisdom Preferred ☤ Love Non-Negotiable ☤</span>
         </div>
       </div>
+
       <div class="counter-section">
         <div class="visitor-counter">
           <div class="blink-text">☤ WOMEN IN STEM ☤</div>
@@ -95,6 +584,7 @@
       </div>
     </div>
 
+    <!-- Navigation Frame -->
     <div class="navigation-frame">
       <div class="nav-title">☤ START HERE ☤</div>
       <div class="nav-buttons">
@@ -107,9 +597,11 @@
       </div>
     </div>
 
+    <!-- Content Frame -->
     <div class="content-frame">
       <div class="content-title" id="content-title">In My Schrödinger’s Cat era…</div>
 
+      <!-- The Awakening Tab -->
       <div class="content-area active" id="awakening">
         <div class="sidebar-frame left-sidebar">
           <div class="sidebar-title">BIOMETRIC DATA</div>
@@ -119,7 +611,7 @@
               <li><strong>Focus:</strong> Computational Biology (CS foundation)</li>
               <li><strong>Current Study:</strong> UoPeople CS 1111; MIT OCW tracks</li>
               <li><strong>Interests:</strong> DNA, Bio-signals, WBANs, info theory, data analysis</li>
-              <li><strong>Currently Reading:</strong> Hall & Hao (2012) <i>Antennas and Propagation…</i></li>
+              <li><strong>Currently Reading:</strong> Peter S. Hall, Yang Hao (2012) <i>Antennas and Propagation for Body‑Centric Wireless Communications</i></li>
               <li><strong>Favorite Scientist:</strong> Gladys West</li>
             </ul>
           </div>
@@ -130,59 +622,154 @@
           <div class="sidebar-content">
             <ul>
               <li>Both maternal great-grandmothers born in 1933 are still alive and well today.</li>
-              <li>I see signs and symbols that God is within me every day.</li>
+              <li>I see signs and symbols that God is within me and all around me every day.</li>
             </ul>
           </div>
         </div>
 
-        <h2>THE BIODIGITAL CONVERGENCE IS COMING...</h2>
-        <p>Greetings, …</p>
+        <h2>THE BIODIGITAL CONVERGENCE IS COMING…</h2>
+        <p>Greetings,</p>
+        <p>For countless millennia, Humans have endlessly fought, struggled for power and control, and committed horrible atrocities against one another... We may reside in an imperfect world, but that doesn't have to stop us from being the best we can be.</p>
+        <p>Today, we stand at the edge of a new age, where biology and technology no longer move on separate tracks, but weave into one living system. The code of life is becoming as editable as software, and our machines are beginning to sense, learn, and evolve alongside us.</p>
+        <p>Whether we choose to direct these tools toward healing, understanding, and discovery or let them deepen the divisions that scar our history is in our hands.</p>
+        <p>Our challenge is simple and profound: to carry forward both wisdom and compassion into this biodigital future, so that the sciences of code and cell serve humanity rather than enslave it.</p>
+        <p>The world has been rewritten before by fire, wheel, and electricity. Now we prepare to be rewritten by data, networks, and the genome itself.</p>
 
         <div class="ancient-text-box">
           <i>I know that my redeemer lives, and that in the end he will stand on the earth.</i> Job 19:25
         </div>
 
         <table class="stats-table">
-          <tr><th>Currently Studying</th><th>School & Course # (s)</th><th>Institution</th></tr>
-          <tr><td>Computer Science</td><td>CS 1111 Introduction to Computer Science</td><td>University of the People</td></tr>
+          <tr>
+            <th>Currently Studying</th>
+            <th>School & Course # (s)</th>
+            <th>Institution</th>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>CS 1111 Introduction to Computer Science</td>
+            <td>University of the People</td>
+          </tr>
         </table>
 
-        <p>I am currently pursuing my Associate’s degree …</p>
+        <p>I am currently pursuing my Associate’s degree in Computer Science at University of the People, with the goal of advancing to a Bachelor’s program and continuing into graduate studies. My long-term focus is on computational biology, with an interest in global security and research applications at institutions such as NYU and CERN. This site documents my academic journey through coursework, weekly readings, and independent study, serving both as a record of progress and a foundation for future research opportunities.</p>
+
+        <p>I blend my personal intuition and study of the Holy Bible, teachings of Christ, study of Theology, Archaeology, Etymology, ancient historical texts, family oral history & STEM to form the basis of my beliefs and practices which are rooted in the Power and The Almighty Grace of The Holy Spirit. Science & Religion & Spirituality are not separate studies in my opinion. They help make sense of one another.</p>
 
         <div class="ritual-box">
           <div class="ritual-header">WOMEN IN STEM - Scientist of the Week</div>
           <div class="ritual-content">
             <p>Women in STEM Weekly Website Feature</p>
             <h1>Gladys West</h1>
-            <img src="https://mftech.neocities.org/Site%20Graphics/gladyswest3.jpg" alt="Scientist Gladys West" width="500" height="300">
-            <p>Dr. Gladys Mae West is an American mathematician whose groundbreaking work helped make modern GPS technology possible …</p>
+            <img src="https://mftech.neocities.org/Site%20Graphics/gladyswest3.jpg" alt="Scientist Gladys West" width="500" height="300" />
+            <p>One of my biggest inspirations as an aspiring computational environmental scientist and biologist.</p>
+            <p>Dr. <strong>Gladys Mae West</strong> is an American mathematician whose groundbreaking work helped make modern GPS technology possible. Born in 1930 in rural Virginia, she overcame racial and gender barriers to become one of the leading minds at the U.S. Naval Weapons Laboratory during the Cold War era.</p>
+            <p>Her most impactful contributions came through her complex mathematical modeling of the Earth's shape, known as a geoid. Her calculations were critical to the development of the satellite-based global positioning system we all rely on today — from Google Maps to autonomous vehicles.</p>
+            <p>Despite her pivotal role, her story remained largely untold for decades. Recognition came late in her life, with the U.S. Air Force honoring her in 2018 and her induction into the <em>Air Force Space and Missile Pioneers Hall of Fame</em>.</p>
+            <p>Dr. West’s legacy is a powerful reminder of how quiet dedication and brilliant science can shape the world. Her life inspires future generations to break barriers and reach for the stars... Or, in her case, map the planet to pinpoint accuracy.</p>
           </div>
         </div>
 
-        <p>Thank you for visiting my web page …</p>
-      </div>
-    </div>
+        <p>Thank you for visiting my web page. I have some tabs below with some additional resources. Feel free to contact me with any questions, whether they be related to science, religion, spiritual, or otherwise as long as it is respectful and relevant to topics I typically discuss.</p>
+
+      </div> <!-- end content-area awakening -->
+
+      <!-- (Other tabs content-area go here: powers, memories, artifacts, rituals, prophecies) -->
+
+    </div> <!-- end content-frame -->
 
     <div class="footer-frame">
       <div class="web-ring">
-        <strong>WEBRINGS</strong><br>
-        <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a><br>
+        <strong>WEBRINGS</strong><br />
+        <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a><br />
         Sovereign Soul Server
       </div>
       <div class="footer-links">
         <div class="footer-section">
           <h4>BOOKSHELF</h4>
           <ul>
-            <li><a href="#">Hall & Yao – Wireless Body Area Networks</a></li>
+            <li><a href="your-pdf-link-here.pdf" target="_blank">Hall & Yao – Wireless Body Area Networks</a></li>
+            <li><a href="https://www.openbookpublishers.com/product/1232" target="_blank">Stephen Robertson – BC, Before Computers</a></li>
+            <li><a href="your-pdf-link-here.pdf" target="_blank">Tertulien Ndjountche – Digital Electronics</a></li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>RESOURCES & LINKS</h4>
           <ul>
-            <li><a href="#">Free Open Courses and Accredited Institutions</a></li>
+            <li><a href="https://open.substack.com/pub/prozacncheese/p/a-sovereign-souls-seminary?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Free Open Courses and Accredited Institutions</a></li>
+            <li><a href="https://open.substack.com/pub/prozacncheese/p/girl-ben-elohims-library?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Digital Archive of Works Cited</a></li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>CONTACT ME</h4>
           <ul>
-            <li><a href="mailto:business@meganfre
+            <li><a href="mailto:business@meganfrench.tech">Email Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="visitor-counter">
+        <div class="blink-text">※ SITE IS BEING MONITORED BY ARCHANGEL MICHAEL ※</div>
+        <p>Copyright © 2025 MEGAN FRENCH - All Rights Reserved Across All Dimensions</p>
+      </div>
+    </div> <!-- end footer-frame -->
+
+  </div> <!-- end main-container -->
+
+  <script>
+    // Create twinkling stars
+    function createStars() {
+      const starsContainer = document.getElementById('stars');
+      const numStars = 100;
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        starsContainer.appendChild(star);
+      }
+    }
+
+    // Tab switching functionality
+    function showTab(tabName) {
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      document.querySelectorAll('.content-area').forEach(area => {
+        area.classList.remove('active');
+      });
+      const target = document.getElementById(tabName);
+      if (target) {
+        target.classList.add('active');
+      }
+      const titles = {
+        'awakening': 'THE DIVINE AWAKENING - EMERGENCE OF FORGOTTEN DEITY',
+        'powers': 'DIVINE ABILITIES & SUPERNATURAL MANIFESTATIONS',
+        'memories': 'ECHOES ACROSS THE AGES - MEMORIES OF SEVEN INCARNATIONS',
+        'artifacts': 'SACRED OBJECTS & DIVINE RELICS - MYSTICAL ARTIFACT COLLECTION',
+        'rituals': 'SACRED PRACTICES & CEREMONIAL RITUALS - DIVINE PROCEDURES',
+        'prophecies': 'VISIONS OF WHAT IS TO COME - DIVINE PROPHECIES & FUTURE SIGHT',
+        'communion': 'COMMUNION WITH THE DIVINE - CONTACT & CONSULTATION SERVICES'
+      };
+      if (titles[tabName]) {
+        const titleEl = document.getElementById('content-title');
+        if (titleEl) titleEl.textContent = titles[tabName];
+      }
+    }
+
+    // Collapsible ritual boxes
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('ritual-header')) {
+        e.target.parentElement.classList.toggle('expanded');
+      }
+    });
+
+    // Initialize
+    window.addEventListener('load', function() {
+      createStars();
+      // You can keep your counter and mystical effects logic here if desired
+    });
+  </script>
+</body>
+</html>
