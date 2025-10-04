@@ -579,8 +579,8 @@
       <div class="counter-section">
         <div class="visitor-counter">
           <div class="blink-text">☤ WOMEN IN STEM ☤</div>
-          Site Visitors: <span id="visitor-count">001,847</span> | Days Since First CS Course: <span id="days-count">28</span><br>
-          Last Updated: 09/29/2025 <span id="last-update"></span>
+          Site Visitors: <span id="visitor-count">001,847</span> | Days Since First CS Course: <span id="days-count">31</span><br>
+          Last Updated: 10.03.2025 <span id="last-update"></span>
         </div>
       </div>
     </div>
@@ -589,13 +589,13 @@
     <div class="navigation-frame">
       <div class="nav-title">☤ START HERE ☤</div>
       <div class="nav-buttons">
-       <button class="nav-btn active" onclick="showTab('awakening')">ABOUT ME</button>
+       <button class="nav-btn active" onclick="showTab('about')">ABOUT ME</button>
 
-        <button class="nav-btn" onclick="showTab('powers')">RECENT WORKS</button>
-        <button class="nav-btn" onclick="showTab('memories')">CURRENT PROJECTS</button>
-        <button class="nav-btn" onclick="showTab('artifacts')">NOTES</button>
-        <button class="nav-btn" onclick="showTab('rituals')">RESOURCES</button>
-        <button class="nav-btn" onclick="showTab('prophecies')">CONTACT</button>
+        <button class="nav-btn" onclick="showTab('info')">RECENT WORKS</button>
+        <button class="nav-btn" onclick="showTab('projects')">CURRENT PROJECTS</button>
+        <button class="nav-btn" onclick="showTab('notes')">NOTES</button>
+        <button class="nav-btn" onclick="showTab('resources')">RESOURCES</button>
+        <button class="nav-btn" onclick="showTab('contact')">CONTACT</button>
 
       </div>
     </div>
@@ -821,13 +821,13 @@
     });
     document.getElementById(tabName).classList.add('active');
     const titles = {
-      'awakening': 'THE DIVINE AWAKENING - EMERGENCE OF FORGOTTEN DEITY',
-      'powers': 'DIVINE ABILITIES & SUPERNATURAL MANIFESTATIONS',
-      'memories': 'ECHOES ACROSS THE AGES - MEMORIES OF SEVEN INCARNATIONS',
-      'artifacts': 'SACRED OBJECTS & DIVINE RELICS - MYSTICAL ARTIFACT COLLECTION',
-      'rituals': 'SACRED PRACTICES & CEREMONIAL RITUALS - DIVINE PROCEDURES',
-      'prophecies': 'VISIONS OF WHAT IS TO COME - DIVINE PROPHECIES & FUTURE SIGHT',
-      'communion': 'COMMUNION WITH THE DIVINE - CONTACT & CONSULTATION SERVICES'
+      'about': 'In My Schrödinger’s Cat era... Currently in a state of being neither dead nor alive',
+      'info': '“If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off" - Barbara McClintock',
+      'projects': '“That brain of mine is something more than merely mortal, as time will show.” Ada Lovelace',
+      'notes': '“All our knowledge has its origins in our perceptions.” Leonardo da Vinci',
+      'resources': '“If I have seen further it is by standing on the shoulders of giants.” Sir Isaac Newton',
+      'contact': '“Strive not to be a success, but rather to be of value.” Einstein',
+     
     };
     document.getElementById('content-title').textContent = titles[tabName];
   }
