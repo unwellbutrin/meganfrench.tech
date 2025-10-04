@@ -5,22 +5,19 @@
   <meta name="viewport" content="width=device-width, initial‑scale=1.0" />
   <title> Megan French | STEM Student & Aspiring Computational Biologist </title>
   <style>
-
-
+    /* -- (Your existing CSS stays here, unchanged) -- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Times New Roman', serif;
-      background: #ffffff; /* pure white */
-      color: #202020; /* dark grey / near-black text */
+      background: #ffffff;
+      color: #202020;
       line-height: 1.4;
       overflow-x: auto;
     }
-
     .cosmic-stars {
       position: fixed;
       top: 0;
@@ -30,20 +27,17 @@
       pointer-events: none;
       z-index: 1;
     }
-
     .star {
       position: absolute;
       width: 1px;
       height: 1px;
-      background: #cccccc; /* light grey stars */
+      background: #cccccc;
       animation: twinkle 3s infinite;
     }
-
     @keyframes twinkle {
       0%, 100% { opacity: 0.3; }
       50% { opacity: 0.8; }
     }
-
     .main-container {
       position: relative;
       z-index: 2;
@@ -51,15 +45,13 @@
       max-width: 1024px;
       margin: 0 auto;
       background: #ffffff;
-      border: 2px solid #bbbbbb; /* subtle grey border */
+      border: 2px solid #bbbbbb;
     }
-
     .header-frame {
       background: #f9f9f9;
       border-bottom: 2px solid #cccccc;
       padding: 0;
     }
-
     .title-bar {
       background: #dddddd;
       color: #202020;
@@ -69,12 +61,10 @@
       font-size: 14px;
       border-bottom: 1px solid #b0b0b0;
     }
-
     .header-content {
       padding: 20px;
       text-align: center;
     }
-
     .main-title {
       font-size: 36px;
       color: #202020;
@@ -82,14 +72,12 @@
       margin-bottom: 10px;
       font-weight: bold;
     }
-
     .subtitle {
       font-size: 18px;
       color: #555555;
       font-style: italic;
       margin-bottom: 20px;
     }
-
     .counter-section {
       background: #f3f3f3;
       border: 1px inset #cccccc;
@@ -98,13 +86,11 @@
       text-align: center;
       font-family: 'Courier New', monospace;
     }
-
     .navigation-frame {
       background: #f3f3f3;
       border: 1px inset #cccccc;
       margin: 0 20px 20px 20px;
     }
-
     .nav-title {
       background: #dddddd;
       color: #202020;
@@ -113,7 +99,6 @@
       font-weight: bold;
       font-size: 14px;
     }
-
     .nav-buttons {
       padding: 15px;
       display: flex;
@@ -121,7 +106,6 @@
       justify-content: center;
       gap: 10px;
     }
-
     .nav-btn {
       background: #eeeeee;
       border: 1px solid #cccccc;
@@ -135,25 +119,21 @@
       min-width: 120px;
       text-align: center;
     }
-
     .nav-btn:hover {
-      background: #f4e8e8; /* very light pink tint on hover */
-      border-color: #e8c4c4; /* soft pink border */
+      background: #f4e8e8;
+      border-color: #e8c4c4;
     }
-
     .nav-btn.active {
-      background: #f4d8d8; /* light pink background to indicate active */
+      background: #f4d8d8;
       border: 1px solid #e8a8a8;
       color: #202020;
     }
-
     .content-frame {
       margin: 0 20px 20px 20px;
       border: 1px inset #cccccc;
       background: #fafafa;
       min-height: 600px;
     }
-
     .content-title {
       background: #dddddd;
       color: #202020;
@@ -162,16 +142,13 @@
       font-weight: bold;
       font-size: 16px;
     }
-
     .content-area {
       padding: 20px;
       display: none;
     }
-
     .content-area.active {
       display: block;
     }
-
     .sidebar-frame {
       float: right;
       width: 200px;
@@ -179,7 +156,6 @@
       border: 1px inset #cccccc;
       background: #f3f3f3;
     }
-
     .sidebar-title {
       background: #dddddd;
       color: #202020;
@@ -188,28 +164,23 @@
       font-weight: bold;
       font-size: 12px;
     }
-
     .sidebar-content {
       padding: 15px;
       font-size: 12px;
     }
-
     .sidebar-content ul {
       list-style: none;
     }
-
     .sidebar-content li {
       margin: 8px 0;
       padding: 3px;
       border-left: 1px solid #cccccc;
       padding-left: 8px;
     }
-
     .left-sidebar {
       float: left;
       margin: 0 20px 20px 0;
     }
-
     .stats-table {
       width: 100%;
       border: 1px solid #cccccc;
@@ -217,24 +188,20 @@
       margin: 20px 0;
       font-size: 14px;
     }
-
     .stats-table th,
     .stats-table td {
       border: 1px solid #cccccc;
       padding: 8px;
       text-align: left;
     }
-
     .stats-table th {
       background: #dddddd;
       color: #202020;
       font-weight: bold;
     }
-
     .stats-table tr:nth-child(even) {
       background: #f7f7f7;
     }
-
     .ancient-text-box {
       border: 2px dashed #cccccc;
       background: #f5f5f5;
@@ -245,7 +212,6 @@
       position: relative;
       color: #555555;
     }
-
     .ancient-text-box::before {
       content: '◊';
       position: absolute;
@@ -256,7 +222,6 @@
       padding: 0 10px;
       font-size: 20px;
     }
-
     .ancient-text-box::after {
       content: '◊';
       position: absolute;
@@ -267,18 +232,15 @@
       padding: 0 10px;
       font-size: 20px;
     }
-
     .ability-grid {
       display: table;
       width: 100%;
       border-spacing: 10px;
       margin: 20px 0;
     }
-
     .ability-row {
       display: table-row;
     }
-
     .ability-cell {
       display: table-cell;
       width: 50%;
@@ -288,7 +250,6 @@
       vertical-align: top;
       color: #202020;
     }
-
     .ability-header {
       background: #dddddd;
       color: #202020;
@@ -297,7 +258,6 @@
       font-weight: bold;
       margin: -15px -15px 10px -15px;
     }
-
     .timeline-table {
       width: 100%;
       border: 1px solid #cccccc;
@@ -305,31 +265,26 @@
       margin: 20px 0;
       color: #202020;
     }
-
     .timeline-table th {
       background: #dddddd;
       color: #202020;
       padding: 10px;
       border: 1px solid #b0b0b0;
     }
-
     .timeline-table td {
       padding: 15px;
       border: 1px solid #cccccc;
       vertical-align: top;
     }
-
     .timeline-table tr:nth-child(odd) {
       background: #f7f7f7;
     }
-
     .artifact-showcase {
       border: 1px solid #cccccc;
       background: #fafafa;
       margin: 20px 0;
       padding: 0;
     }
-
     .showcase-header {
       background: #dddddd;
       color: #202020;
@@ -337,17 +292,14 @@
       text-align: center;
       font-weight: bold;
     }
-
     .artifact-grid {
       display: table;
       width: 100%;
       border-spacing: 0;
     }
-
     .artifact-row {
       display: table-row;
     }
-
     .artifact-item {
       display: table-cell;
       width: 33.33%;
@@ -359,11 +311,9 @@
       transition: background 0.3s;
       color: #202020;
     }
-
     .artifact-item:hover {
       background: #f4e8e8;
     }
-
     .prophecy-scroll {
       background: #fafafa;
       border: 2px solid #cccccc;
@@ -373,7 +323,6 @@
       font-family: 'Times New Roman', serif;
       color: #555555;
     }
-
     .prophecy-scroll::before {
       content: 'DIVINE PROPHECY';
       position: absolute;
@@ -386,14 +335,12 @@
       font-size: 12px;
       font-weight: bold;
     }
-
     .ritual-box {
       border: 1px solid #cccccc;
       background: #f9f9f9;
       margin: 15px 0;
       padding: 0;
     }
-
     .ritual-header {
       background: #dddddd;
       color: #202020;
@@ -402,7 +349,6 @@
       cursor: pointer;
       position: relative;
     }
-
     .ritual-header::after {
       content: '[+]';
       position: absolute;
@@ -410,31 +356,25 @@
       top: 50%;
       transform: translateY(-50%);
     }
-
     .ritual-box.expanded .ritual-content {
       display: block;
     }
-
     .ritual-box.expanded .ritual-header::after {
       content: '[-]';
     }
-
     .ritual-content {
       padding: 15px;
       display: none;
       border-top: 1px solid #cccccc;
     }
-
     .blink-text {
       animation: blink 1.5s infinite;
-      color: #d4a8a8; /* muted pink for blink */
+      color: #d4a8a8;
     }
-
     @keyframes blink {
       0%, 50% { opacity: 1; }
       51%, 100% { opacity: 0.3; }
     }
-
     .footer-frame {
       background: #f9f9f9;
       border-top: 2px solid #cccccc;
@@ -442,14 +382,12 @@
       text-align: center;
       color: #202020;
     }
-
     .footer-links {
       display: table;
       width: 100%;
       border-spacing: 20px;
       margin-bottom: 20px;
     }
-
     .footer-section {
       display: table-cell;
       vertical-align: top;
@@ -458,7 +396,6 @@
       padding: 15px;
       color: #202020;
     }
-
     .footer-section h4 {
       background: #dddddd;
       color: #202020;
@@ -467,29 +404,24 @@
       text-align: center;
       font-size: 14px;
     }
-
     .footer-section ul {
       list-style: none;
     }
-
     .footer-section a {
-      color: #e8a8a8; /* light pink hyperlinks */
+      color: #e8a8a8;
       text-decoration: underline;
       font-size: 12px;
     }
-
     .footer-section a:hover {
       color: #d48888;
       background: transparent;
     }
-
     .visitor-counter {
       font-family: 'Courier New', monospace;
       font-size: 12px;
       margin: 10px 0;
       color: #555555;
     }
-
     .web-ring {
       border: 1px solid #cccccc;
       background: #fafafa;
@@ -499,42 +431,35 @@
       font-size: 11px;
       color: #555555;
     }
-
     @media (max-width: 768px) {
       .main-container {
         margin: 0;
         border: none;
         max-width: 100%;
       }
-
       .sidebar-frame {
         float: none;
         width: 100%;
         margin: 0 0 20px 0;
       }
-
       .ability-cell {
         display: block;
         width: 100%;
         margin-bottom: 10px;
       }
-
       .artifact-item {
         display: block;
         width: 100%;
       }
-
       .footer-section {
         display: block;
         margin-bottom: 20px;
       }
-
       .nav-buttons {
         flex-direction: column;
         align-items: center;
       }
     }
-
     .scroll-marquee {
       background: #dddddd;
       color: #202020;
@@ -544,19 +469,16 @@
       border: 1px solid #b0b0b0;
       margin: 10px 0;
     }
-
     .scroll-marquee span {
       display: inline-block;
       animation: scroll-left 30s linear infinite;
     }
-
     @keyframes scroll-left {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
   </style>
- </head>
-
+</head>
 <body>
   <div class="cosmic-stars" id="stars"></div>
 
@@ -589,14 +511,12 @@
     <div class="navigation-frame">
       <div class="nav-title">☤ START HERE ☤</div>
       <div class="nav-buttons">
-       <button class="nav-btn" onclick="showTab('about')">ABOUT ME</button>
-
+        <button class="nav-btn active" onclick="showTab('about')">ABOUT ME</button>
         <button class="nav-btn" onclick="showTab('info')">RECENT WORKS</button>
         <button class="nav-btn" onclick="showTab('projects')">CURRENT PROJECTS</button>
         <button class="nav-btn" onclick="showTab('notes')">NOTES</button>
         <button class="nav-btn" onclick="showTab('resources')">RESOURCES</button>
         <button class="nav-btn" onclick="showTab('contact')">CONTACT</button>
-
       </div>
     </div>
 
@@ -604,7 +524,7 @@
     <div class="content-frame">
       <div class="content-title" id="content-title"> In My Schrödinger’s Cat era... Currently in a state of being neither dead nor alive </div>
 
-      <!-- The ABOUT Tab -->
+      <!-- ABOUT ME Tab -->
       <div class="content-area active" id="about">
         <div class="sidebar-frame left-sidebar">
           <div class="sidebar-title">BIOMETRIC DATA</div>
@@ -615,7 +535,6 @@
               <li><strong>Current Study:</strong> UoPeople CS 1111; MIT OCW tracks</li>
               <li><strong>Interests:</strong> DNA, Bio-signals, WBANs, info theory, data analysis</li>
               <li><strong>Currently Reading:</strong> Peter S. Hall, Yang Hao (2012) <i>Antennas and Propagation for Body-Centric Wireless Communications, Second Edition</i></li>
-
               <li><strong>Favorite Scientist:</strong> Gladys West</li>
             </ul>
           </div>
@@ -625,334 +544,326 @@
           <div class="sidebar-title">ANOMALIES I HAVE WITNESSED</div>
           <div class="sidebar-content">
             <ul>
-              <li>Both of Maternal Great Grandmothers born in 1933 are still alive and well today. They are both 92. </li>
-
-              <li>I see signs and symbols that God is within me and all around me everyday. Every moment is a blessing. </li>
+              <li>Both of Maternal Great Grandmothers born in 1933 are still alive and well today. They are both 92.</li>
+              <li>I see signs and symbols that God is within me and all around me everyday. Every moment is a blessing.</li>
               <li>I became an aunt despite my sister believing she would never bear children.</li>
-              <li>My ancestors survived wars, genocides, forced relocations, coerced marriages, and biological warfare but somehow I am still living on their same lands. I am grateful for my strength and humbled by theirs. </li>
-
+              <li>My ancestors survived wars, genocides, forced relocations, coerced marriages, and biological warfare but somehow I am still living on their same lands. I am grateful for my strength and humbled by theirs.</li>
             </ul>
           </div>
         </div>
 
-        <h2>THE BIODIGITAL CONVERGENCE IS COMING... </h2>
-
+        <h2>THE BIODIGITAL CONVERGENCE IS COMING...</h2>
         <p>Greetings,</p>
+        <p>For countless millennia, Humans have endlessly fought, struggled for power and control, and committed horrible atrocities against one another... We may reside in an imperfect world, but that doesn't have to stop us from being the best we can be.</p>
+        <p>Today, we stand at the edge of a new age, where biology and technology no longer move on separate tracks, but weave into one living system. The code of life is becoming as editable as software, and our machines are beginning to sense, learn, and evolve alongside us.</p>
+        <p>Whether we choose to direct these tools toward healing, understanding, and discovery or let them deepen the divisions that scar our history, is in our hands.</p>
+        <p>Our challenge is simple and profound: to carry forward both wisdom and compassion into this biodigital future, so that the sciences of code and cell serve humanity rather than enslave it.</p>
+        <p>The world has been rewritten before by fire, wheel, and electricity. Now we prepare to be rewritten by data, networks, and the genome itself.</p>
+        <br /><br /><br /><br />
+        <center>The only question that remains is: what will we become?</center>
 
-        <p>For countless millennia, Humans have endlessly fought, struggled for power and control, and commited horrible atrocities against one another... We may reside in an imperfect world, but that doesn't have to stop us from being the best we can be. </p>
-        <p> Today, we stand at the edge of a new age, where biology and technology no longer move on separate tracks, but weave into one living system. The code of life is becoming as editable as software, and our machines are beginning to sense, learn, and evolve alongside us.
-
-          Whether we choose to direct these tools toward healing, understanding, and discovery or let them deepen the divisions that scar our history, is in our hands.
-
-          Our challenge is simple and profound: to carry forward both wisdom and compassion into this biodigital future, so that the sciences of code and cell serve humanity rather than enslave it.
-
-          The world has been rewritten before by fire, wheel, and electricity. Now we prepare to be rewritten by data, networks, and the genome itself. <br /><br /> <br /> <br />
-          <center> The only question that remains is: what will we become?
+        <div class="ritual-box">
+          <div class="ritual-header">WOMEN IN STEM - Scientist of the Week</div>
+          <div class="ritual-content">
+            <p>Women in STEM Weekly Website Feature</p>
+            <h1>Gladys West</h1>
+            <img src="https://mftech.neocities.org/Site%20Graphics/gladyswest3.jpg" alt="Scientist Gladys West" width="500" height="300">
+          </div>
+        </div>
       </div>
-    </div>
 
-      <!-- The INFO Tab -->
-<div class="content-area" id="info">
-      <h2>Biography</h2>
-    <p>Hello! I’m Megan French, a student of Computer Science with a divine fascination for biology, data, logical algebra, and the mysteries that connect them all. My journey began with a curiosity for how information flows, but, not just through machines, but through bodies, genes, generations, and ancient texts.</p>
-    <p>I believe the intersection of **science and spirit** is where real transformation lies. This belief has led me to a path that blends code with compassion, analytics with ancestral wisdom, and algorithms with awe.</p>
+      <!-- INFO / RECENT WORKS Tab -->
+      <div class="content-area" id="info">
+        <h2>Biography</h2>
+        <p>Hello! I’m Megan French, a student of Computer Science with a divine fascination for biology, data, logical algebra, and the mysteries that connect them all. My journey began with a curiosity for how information flows, but, not just through machines, but through bodies, genes, generations, and ancient texts.</p>
+        <p>I believe the intersection of <strong>science and spirit</strong> is where real transformation lies. This belief has led me to a path that blends code with compassion, analytics with ancestral wisdom, and algorithms with awe.</p>
 
-    <h2>Timeline of Goals</h2>
-        <h3>2025 – Started CS Associates Program</h3><br />
+        <h2>Timeline of Goals</h2>
+        <h3>2025 – Started CS Associates Program</h3>
         <p>Enrolled in my first formal computer science courses at University of the People, discovering Python and the art of logical problem-solving. Set to graduate by 2027.</p>
-        <h3>2027 – Start CS Bachelors Program </h3><br />
-        <p> I will enroll at UoPeople again to earn my Bachelors Degree in Computer Science. I should have this completed by 2029. </p><br />
-   
-        <h3>2029 - Enroll in NYU Tandon School of Engineering - M.S in Biomedical Engineering </h3><br />
-        <p>I would LOVE to get accepted into this program and will be working myself to the bone to do anything I can to make tuition easier on myself. I plan to apply to scholarships and save as much money as I can during undergrad to make this happen for myself.  </p>
-<br />
-        <h3>2031 - Enroll in UC Berkeley's Bioengineering Program - PhD in Computational Biology </h3><br />
-        <p>My dream chool. My end goal. The ultimate reason for it all. Projected time is about 5 years.  </p><br />
+        <h3>2027 – Start CS Bachelors Program</h3>
+        <p>I will enroll at UoPeople again to earn my Bachelors Degree in Computer Science. I should have this completed by 2029.</p>
+        <h3>2029 – Enroll in NYU Tandon School of Engineering – M.S in Biomedical Engineering</h3>
+        <p>I would LOVE to get accepted into this program and will be working myself to the bone to do anything I can to make tuition easier on myself. I plan to apply to scholarships and save as much money as I can during undergrad to make this happen for myself.</p>
+        <h3>2031 – Enroll in UC Berkeley's Bioengineering Program – PhD in Computational Biology</h3>
+        <p>My dream school. My end goal. The ultimate reason for it all. Projected time is about 5 years.</p>
+        <h3>2032 – Enroll in CERN's Doctorate Student Residency Research Programme</h3>
+        <p>CERN has a program for doctorate students that allows you to do a residency abroad in Geneva as part of the learning program. It would be an absolute dream come true to work alongside some of the most brilliant minds on the planet.</p>
+        <h3>2037 – Work for BAE Systems, DARPA, or CERN itself</h3>
+        <p>If you can't beat 'em, join 'em.</p>
 
-        <h3>2032 - Enroll in CERN's Doctorate Student Residency Research Programme </h3><br />
-        <p> CERN has a program for doctorate students that allows you to do a residency abroad in Geneva as part of the learning program. It would be an absolute dream come true to work alongside some of the most brilliant minds on the planet. </p>
-<br />
-        <h3>2037 - Work for BAE Systems, DARPA, or CERN itself </h3><br />
-        <p> If you cant beat em, join em. </p><br />
- </div>
+        <div class="manifesto-scroll">
+          I walk with faith, but code with reason. I seek patterns in cells and in stars. My science is sacred. My research is a ritual. My goal: to bridge the biological, spiritual, and the digital for the good of humanity.
+        </div>
 
+        <div class="about-section">
+          <h2>Inspiration</h2>
+          <p>I find strength in women like <strong>Gladys West</strong>, whose work on GPS reminds us that quiet persistence can literally shape the entire world. I also draw deeply from spiritual texts and sacred traditions that remind me: knowledge is nothing without wisdom, and progress is nothing without purpose.</p>
+        </div>
 
-  <div class="about-section">
-    <h2>Inspiration</h2>
-    <p>I find strength in women like <strong>Gladys West</strong>, whose work on GPS reminds us that quiet persistence can literally shape the entire world. I also draw deeply from spiritual texts and sacred traditions that remind me: knowledge is nothing without wisdom, and progress is nothing without purpose.</p>
-  </div>
+        <div class="fun-facts">
+          <h2>Fun Facts</h2>
+          <ul>
+            <li>I use 'nerd' as a sacred title, not a perjorative.</li>
+            <li>I believe science fiction is often prophecy.</li>
+            <li>I study ancient languages in my free time (Greek, Hebrew, Latin).</li>
+            <li>My two maternal great-grandmothers are both still alive at 92!</li>
+          </ul>
+        </div>
 
-  <div class="fun-facts">
-    <h2>Fun Facts</h2>
-    <ul>
-      <li>I use 'nerd' as a sacred title, not a perjorative.</li>
-      <li>I believe science fiction is often prophecy.</li>
-      <li>I study ancient languages in my free time (Greek, Hebrew, Latin).</li>
-      <li>My two maternal great-grandmothers are both still alive at 92!</li>
-    </ul>
-  </div>
+        <div class="ancient-text-box">
+          <i>I know that my redeemer lives, and that in the end he will stand on the earth.</i> Job 19:25
+        </div>
+
+        <table class="stats-table">
+          <tr>
+            <th>Currently Studying</th>
+            <th>School & Course # (s)</th>
+            <th> Institution </th>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>CS 1111 Introduction to Computer Science</td>
+            <td>University of the People</td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>6.0001 Introduction to Computer Science and Programming in Python</td>
+            <td>MIT OpenCourseWare</td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>1.017 Computing and Data Analysis for Environmental Applications</td>
+            <td>MIT OpenCourseWare</td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>1.204 Computer Algorithms in Systems Engineering</td>
+            <td>MIT OpenCourseWare</td>
+          </tr>
+          <tr>
+            <td>Bioinformatics & Bioengineering</td>
+            <td>BE.010J Introduction to Bioengineering</td>
+            <td>MIT OpenCourseWare</td>
+          </tr>
+          <tr>
+            <td>Philosophy</td>
+            <td>PHIL 176 Death</td>
+            <td>Yale University Open Courses</td>
+          </tr>
+          <tr>
+            <td>Philosophy</td>
+            <td>PHIL 181 Philosophy & Science of Human Nature</td>
+            <td>Yale University Open Courses</td>
+          </tr>
+          <tr>
+            <td>Political Science</td>
+            <td>PLSC 270 Capitalism: Success, Crisis, Reform</td>
+            <td>Yale University Open Courses</td>
+          </tr>
+        </table>
+
+        <p>I am currently pursuing my Associate’s degree in Computer Science at University of the People, with the goal of advancing to a Bachelor’s program and continuing into graduate studies. My long-term focus is on computational biology, with an interest in global security and research applications at institutions such as NYU and CERN. This site documents my academic journey through coursework, weekly readings, and independent study, serving both as a record of progress and a foundation for future research opportunities.</p>
+
+        <p>I blend my personal intuition and study of the Holy Bible, teachings of Christ, study of Theology, Archaeology, Etymology, ancient historical texts, family oral history & STEM to form the basis of my beliefs and practices which are rooted in the Power and The Almighty Grace of The Holy Spirit. Science & Religion & Spirituality are not separate studies in my opinion. They help make sense of one another.</p>
+
+        <div class="ritual-box">
+          <div class="ritual-header">WOMEN IN STEM - Scientist of the Week</div>
+          <div class="ritual-content">
+            <p>Women in STEM Weekly Website Feature</p>
+            <h1>Gladys West</h1>
+            <img src="https://mftech.neocities.org/Site%20Graphics/gladyswest3.jpg" alt="Scientist Gladys West" width="500" height="300">
+          </div>
+        </div>
+
+        <p> One of my biggest inspirations as an aspiring computational environmental scientist and biologist.<br />
+          Dr. <strong>Gladys Mae West</strong> is an American mathematician whose groundbreaking work helped make modern GPS technology possible. Born in 1930 in rural Virginia, she overcame racial and gender barriers to become one of the leading minds at the U.S. Naval Weapons Laboratory during the Cold War era.</p>
+        <p>Her most impactful contributions came through her complex mathematical modeling of the Earth's shape, known as a geoid. Her calculations were critical to the development of the satellite-based global positioning system we all rely on today — from Google Maps to autonomous vehicles.</p>
+        <p>Despite her pivotal role, her story remained largely untold for decades. Recognition came late in her life, with the U.S. Air Force honoring her in 2018 and her induction into the <em>Air Force Space and Missile Pioneers Hall of Fame</em>.</p>
+        <p>Dr. West’s legacy is a powerful reminder of how quiet dedication and brilliant science can shape the world. Her life inspires future generations to break barriers and reach for the stars... Or, in her case, map the planet to pinpoint accuracy.</p>
       </div>
-     
 
-    
-    <div class="ancient-text-box">
-      <i>I know that my redeemer lives, and that in the end he will stand on the earth.</i> Job 19:25
-    </div>
+      <!-- Other tabs -->
+      <div class="content-area" id="projects">
+        <h2>Current Projects</h2>
+        <p>Coming soon — coding, research, and digital artifacts in development.</p>
+      </div>
 
-    <table class="stats-table">
-      <tr>
-        <th>Currently Studying</th>
-        <th>School & Course # (s)</th>
-        <th> Institution </th>
-      </tr>
-      <tr>
-        <td>Computer Science</td>
-        <td>CS 1111 Introduction to Computer Science</td>
-        <td>University of the People</td>
-      </tr>
-      <tr>
-        <td>Computer Science</td>
-        <td>6.0001 Introduction to Computer Science and Programming in Python</td>
-        <td>MIT OpenCourseWare</td>
-      </tr>
+      <div class="content-area" id="notes">
+        <h2>Notes</h2>
+        <p>Your weekly study notes etc.</p>
+      </div>
 
-      <td>Computer Science</td>
-      <td>1.017 Computing and Data Analysis for Environmental Applications</td>
-      <td>MIT OpenCourseWare</td>
-      </tr>
-      <td>Computer Science</td>
-      <td>1.204 Computer Algorithms in Systems Engineering</td>
-      <td>MIT OpenCourseWare</td>
-      <tr>
-        <td>Bioinformatics & Bioengineering</td>
-        <td>BE.010J Introduction to Bioengineering</td>
-        <td>MIT OpenCourseWare</td>
-      </tr>
-      <tr>
-        <td>Philosophy</td>
-        <td>PHIL 176 Death</td>
-        <td>Yale University Open Courses</td>
-      </tr>
+      <div class="content-area" id="resources">
+        <h2>Resources</h2>
+        <p>Links, readings, references.</p>
+      </div>
 
-      <td>Philosophy</td>
-      <td>PHIL 181 Philosophy & Science of Human Nature</td>
-      <td>Yale University Open Courses</td>
-      </tr>
-      <tr>
-        <td>Political Science</td>
-        <td>PLSC 270 Capitalism: Success, Crisis, Reform</td>
-        <td>Yale University Open Courses</td>
-      </tr>
-      <tr>
+      <div class="content-area" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:business@meganfrench.tech">business@meganfrench.tech</a></p>
+      </div>
 
-      </tr>
-    </table>
+    </div> <!-- end .content-frame -->
+  </div> <!-- end .main-container -->
 
-    <p>I am currently pursuing my Associate’s degree in Computer Science at University of the People, with the goal of advancing to a Bachelor’s program and continuing into graduate studies. My long-term focus is on computational biology, with an interest in global security and research applications at institutions such as NYU and CERN. This site documents my academic journey through coursework, weekly readings, and independent study, serving both as a record of progress and a foundation for future research opportunities.</p>
+  <div class="footer-links">
+    <div class="footer-frame">
+      <div class="web-ring">
+        <strong>WEBRINGS </strong><br>
+        <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a><br>
+        Sovereign Soul Server
+      </div>
 
-    <p>I blend my personal intuition and study of the Holy Bible, teachings of Christ, study of Theology, Archaeology, Etymology, ancient historical texts, family oral history & STEM to form the basis of my beliefs and practices which are rooted in the Power and The Almighty Grace of The Holy Spirit. Science & Religion & Spirituality are not separate studies in my opinion. They help make sense of one another. </p>
-
-    <div class="ritual-box">
-      <div class="ritual-header">WOMEN IN STEM - Scientist of the Week</div>
-      <div class="ritual-content">
-        <font size="12">
-          <p>Women in STEM Weekly Website Feature</p>
-        </font>
-        <h1>Gladys West</h1>
-        <img src="https://mftech.neocities.org/Site%20Graphics/gladyswest3.jpg" alt="Scientist Gladys West" width="500" height="300">
-
-</body>
-
-</html>
-
-<p> One of my biggest inspirations as an aspiring computational environmental scientist and biologist. <br />
-
-  Dr. <strong>Gladys Mae West</strong> is an American mathematician whose groundbreaking work helped make modern GPS technology possible. Born in 1930 in rural Virginia, she overcame racial and gender barriers to become one of the leading minds at the U.S. Naval Weapons Laboratory during the Cold War era.
-</p>
-<p>
-  Her most impactful contributions came through her complex mathematical modeling of the Earth's shape, known as a geoid. Her calculations were critical to the development of the satellite-based global positioning system we all rely on today — from Google Maps to autonomous vehicles.
-</p>
-<p>
-  Despite her pivotal role, her story remained largely untold for decades. Recognition came late in her life, with the U.S. Air Force honoring her in 2018 and her induction into the <em>Air Force Space and Missile Pioneers Hall of Fame</em>.
-</p>
-<p>
-  Dr. West’s legacy is a powerful reminder of how quiet dedication and brilliant science can shape the world. Her life inspires future generations to break barriers and reach for the stars...Or, in her case, map the planet to pinpoint accuracy.
-</p>
-</section><br />
-
-</p>
-</div>
-</div>
-
-<p>Thank you for visiting my web page. I have some tabs below with some additional resources. Feel free to contact me with any questions, whether they be related to science, religion, spiritual, or otherwise as long as it is respectful and relevant to topics I typically discuss. </p>
-</div>
-
-<!-- (Other tabs: powers, memories, artifacts, rituals, prophecies, communion) -->
-<!-- You can keep the same HTML content you already have inside those tabs; their styles will adapt based on the CSS above. -->
-</div>
-
-<div class="footer-links">
-
-  <!-- Footer Frame -->
-  <div class="footer-frame">
-    <div class="web-ring">
-      <strong>WEBRINGS </strong><br>
-      <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a><br>
-      Sovereign Soul Server
-    </div>
-
-    <div class="footer-links">
-      <div class="footer-section">
-        <center>
+      <div class="footer-links">
+        <div class="footer-section">
           <h4>BOOKSHELF</h4>
           <ul>
             <li><a href="your-pdf-link-here.pdf" target="_blank">Hall & Yao – Wireless Body Area Networks</a></li>
             <li><a href="https://www.openbookpublishers.com/product/1232" target="_blank">Stephen Robertson – BC, Before Computers</a></li>
             <li><a href="your-pdf-link-here.pdf" target="_blank">Tertulien Ndjountche – Digital Electronics</a></li>
           </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>RESOURCES & LINKS</h4>
+          <ul>
+            <li><a href="https://open.substack.com/pub/prozacncheese/p/a-sovereign-souls-seminary?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Free Open Courses and Accrediated Institutions</a></li>
+            <li><a href="https://open.substack.com/pub/prozacncheese/p/girl-ben-elohims-library?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Digital Archive of Works Cited</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>CONTACT ME</h4>
+          <ul>
+            <li><a href="mailto:business@meganfrench.tech">Email Me</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-section">
-        <h4>RESOURCES & LINKS</h4>
-        <ul>
-          <li><a href="https://open.substack.com/pub/prozacncheese/p/a-sovereign-souls-seminary?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Free Open Courses and Accrediated Institutions</a></li>
-          <li><a href="https://open.substack.com/pub/prozacncheese/p/girl-ben-elohims-library?r=61lpx6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Digital Archive of Works Cited</a></li>
-
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>CONTACT ME </h4>
-        <ul>
-          <li><a href="mailto:business@meganfrench.tech">Email Me</a></li>
-          </center> </a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="visitor-counter">
-      <div class="blink-text">※ SITE IS BEING MONITORED BY ARCHANGEL MICHAEL ※</div>
-      <p>Copyright © 2025 MEGAN FRENCH - All Rights Reserved Across All Dimensions<br>
+      <div class="visitor-counter">
+        <div class="blink-text">※ SITE IS BEING MONITORED BY ARCHANGEL MICHAEL ※</div>
+        <p>Copyright © 2025 MEGAN FRENCH - All Rights Reserved Across All Dimensions<br>
         Website Blessed and Made with Love - HTML Powered by God's Grace <br>
-        <span class="blink-text">LR-WPAN Standard: IEEE 802.15.4 Continental Vibrational Frequency: 902–928 MHz </span>
-      </p>
+        <span class="blink-text">LR-WPAN Standard: IEEE 802.15.4 Continental Vibrational Frequency: 902–928 MHz</span></p>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  // Create twinkling stars
-  function createStars() {
-    const starsContainer = document.getElementById('stars');
-    const numStars = 100;
-    for (let i = 0; i < numStars; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.left = Math.random() * 100 + '%';
-      star.style.top = Math.random() * 100 + '%';
-      star.style.animationDelay = Math.random() * 3 + 's';
-      starsContainer.appendChild(star);
+  <script>
+    // Create twinkling stars
+    function createStars() {
+      const starsContainer = document.getElementById('stars');
+      const numStars = 100;
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        starsContainer.appendChild(star);
+      }
     }
-  }
-  // Tab switching functionality
-  function showTab(tabName) {
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-      btn.classList.remove('active');
+    // Tab switching functionality
+    function showTab(tabName) {
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      document.querySelectorAll('.content-area').forEach(area => {
+        area.classList.remove('active');
+      });
+      const area = document.getElementById(tabName);
+      if (area) area.classList.add('active');
+      const titles = {
+        'about': 'In My Schrödinger’s Cat era... Currently in a state of being neither dead nor alive',
+        'info': '“If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off" - Barbara McClintock',
+        'projects': '“That brain of mine is something more than merely mortal, as time will show.” Ada Lovelace',
+        'notes': '“All our knowledge has its origins in our perceptions.” Leonardo da Vinci',
+        'resources': '“If I have seen further it is by standing on the shoulders of giants.” Sir Isaac Newton',
+        'contact': '“Strive not to be a success, but rather to be of value.” Einstein',
+      };
+      if (titles[tabName]) {
+        document.getElementById('content-title').textContent = titles[tabName];
+      }
+    }
+    // Collapsible ritual boxes
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('ritual-header')) {
+        const ritualBox = e.target.parentElement;
+        ritualBox.classList.toggle('expanded');
+      }
     });
-    event.target.classList.add('active');
-    document.querySelectorAll('.content-area').forEach(area => {
-      area.classList.remove('active');
-    });
-    document.getElementById(tabName).classList.add('active');
-    const titles = {
-      'about': 'In My Schrödinger’s Cat era... Currently in a state of being neither dead nor alive',
-      'info': '“If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off" - Barbara McClintock',
-      'projects': '“That brain of mine is something more than merely mortal, as time will show.” Ada Lovelace',
-      'notes': '“All our knowledge has its origins in our perceptions.” Leonardo da Vinci',
-      'resources': '“If I have seen further it is by standing on the shoulders of giants.” Sir Isaac Newton',
-      'contact': '“Strive not to be a success, but rather to be of value.” Einstein',
-     
-    };
-    document.getElementById('content-title').textContent = titles[tabName];
-  }
-  // Collapsible ritual boxes
-  document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('ritual-header')) {
-      const ritualBox = e.target.parentElement;
-      ritualBox.classList.toggle('expanded');
+    // Classic web counter animations
+    function updateCounters() {
+      const visitorCount = document.getElementById('visitor-count');
+      const daysCount = document.getElementById('days-count');
+      if (visitorCount && daysCount) {
+        let currentVisitors = parseInt(visitorCount.textContent.replace(/,/g, '')) || 0;
+        currentVisitors += Math.floor(Math.random() * 3) + 1;
+        visitorCount.textContent = currentVisitors.toLocaleString().padStart(7, '0');
+        let currentDays = parseInt(daysCount.textContent.replace(/,/g, '')) || 0;
+        currentDays += Math.floor(Math.random() * 2);
+        daysCount.textContent = currentDays.toLocaleString();
+      }
     }
-  });
-  // Classic web counter animations
-  function updateCounters() {
-    const visitorCount = document.getElementById('visitor-count');
-    const daysCount = document.getElementById('days-count');
-    if (visitorCount && daysCount) {
-      let currentVisitors = parseInt(visitorCount.textContent.replace(/,/g, ''));
-      currentVisitors += Math.floor(Math.random() * 3) + 1;
-      visitorCount.textContent = currentVisitors.toLocaleString().padStart(7, '0');
-      let currentDays = parseInt(daysCount.textContent.replace(/,/g, ''));
-      currentDays += Math.floor(Math.random() * 2);
-      daysCount.textContent = currentDays.toLocaleString();
-    }
-  }
-  // Mystical effects
-  function addMysticalEffects() {
-    if (Math.random() < 0.05) {
-      document.body.style.filter = 'brightness(0.95)';
-      setTimeout(() => {
-        document.body.style.filter = 'brightness(1)';
-      }, 150);
-    }
-    if (Math.random() < 0.02) {
-      const whisper = document.createElement('div');
-      whisper.textContent = '...the convergence approaches...';
-      whisper.style.position = 'fixed';
-      whisper.style.top = '50%';
-      whisper.style.left = '50%';
-      whisper.style.transform = 'translate(-50%, -50%)';
-      whisper.style.color = '#a87fa0';
-      whisper.style.fontSize = '12px';
-      whisper.style.fontStyle = 'italic';
-      whisper.style.pointerEvents = 'none';
-      whisper.style.zIndex = '999';
-      whisper.style.opacity = '0';
-      whisper.style.transition = 'opacity 2s ease';
-      document.body.appendChild(whisper);
-      setTimeout(() => {
-        whisper.style.opacity = '0.8';
+    // Mystical effects
+    function addMysticalEffects() {
+      if (Math.random() < 0.05) {
+        document.body.style.filter = 'brightness(0.95)';
         setTimeout(() => {
-          whisper.style.opacity = '0';
+          document.body.style.filter = 'brightness(1)';
+        }, 150);
+      }
+      if (Math.random() < 0.02) {
+        const whisper = document.createElement('div');
+        whisper.textContent = '...the convergence approaches...';
+        whisper.style.position = 'fixed';
+        whisper.style.top = '50%';
+        whisper.style.left = '50%';
+        whisper.style.transform = 'translate(-50%, -50%)';
+        whisper.style.color = '#a87fa0';
+        whisper.style.fontSize = '12px';
+        whisper.style.fontStyle = 'italic';
+        whisper.style.pointerEvents = 'none';
+        whisper.style.zIndex = '999';
+        whisper.style.opacity = '0';
+        whisper.style.transition = 'opacity 2s ease';
+        document.body.appendChild(whisper);
+        setTimeout(() => {
+          whisper.style.opacity = '0.8';
           setTimeout(() => {
-            whisper.remove();
-          }, 2000);
-        }, 1500);
-      }, 100);
+            whisper.style.opacity = '0';
+            setTimeout(() => {
+              whisper.remove();
+            }, 2000);
+          }, 1500);
+        }, 100);
+      }
     }
-  }
-  // Initialize
-  window.addEventListener('load', function() {
-    createStars();
-    setInterval(updateCounters, 30000);
-    setInterval(addMysticalEffects, 5000);
-    if (!localStorage.getItem('visited_before')) {
-      setTimeout(() => {
-        alert('Welcome, nerd. You have entered the sacred digital realm of a mad scientist. Prepare your consciousness for knowledge transmission.');
-        localStorage.setItem('visited_before', 'true');
-      }, 2000);
-    }
-  });
-  document.addEventListener('contextmenu', function(e) {
-    if (Math.random() < 0.3) {
-      e.preventDefault();
-      alert('The shadows protect this sacred knowledge from unauthorized copying.');
-    }
-  });
-  document.querySelectorAll('.artifact-item').forEach(item => {
-    item.addEventListener('click', function() {
-      alert('In a full implementation, this would open a detailed artifact examination window with 3D visualization and historical documentation.');
+    // Initialize
+    window.addEventListener('load', function() {
+      createStars();
+      setInterval(updateCounters, 30000);
+      setInterval(addMysticalEffects, 5000);
+      if (!localStorage.getItem('visited_before')) {
+        setTimeout(() => {
+          alert('Welcome, nerd. You have entered the sacred digital realm of a mad scientist. Prepare your consciousness for knowledge transmission.');
+          localStorage.setItem('visited_before', 'true');
+        }, 2000);
+      }
     });
-  });
-</script>
+    document.addEventListener('contextmenu', function(e) {
+      if (Math.random() < 0.3) {
+        e.preventDefault();
+        alert('The shadows protect this sacred knowledge from unauthorized copying.');
+      }
+    });
+    document.querySelectorAll('.artifact-item').forEach(item => {
+      item.addEventListener('click', function() {
+        alert('In a full implementation, this would open a detailed artifact examination window with 3D visualization and historical documentation.');
+      });
+    });
+  </script>
 </body>
-
 </html>
